@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='keywords' content='Iris Li, Website'>
+    <meta name='description' content="Iris Li's Website">
+    <meta name='author' content='Iris Yushan Li'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope&display=swap">
+    <title>Braille Translator Blog</title>
+<style>
+     :root {
+  --darkgreen: #1d5e4a;
+}
+
+h1, h2 {
+    font-family: 'Marcellus', serif;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+.tab {
+    background-color: var(--darkgreen);
+}
+
+.tab button {
+    width: 10%;
+    height: 20px;
+    display: inline-block;
+    margin-top: 1%;
+    float: left;
+    border: none;
+    font-size: 17px;
+    color: white;
+    background-color: var(--darkgreen);
+    font-family: 'Manrope', sans-serif;
+}
+
+.tab h1 {
+     color: white;
+    text-align: center;
+}
+
+header {
+            background-color: #1d5e4a; /* Dark green header */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+body {
+     background-color: #e0f2e9;
+}
+
+/* Style for the blog container */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     /* Add space between header and blog posts */
+}
+
+/* Style for each individual blog post */
+.blog {
+    flex-basis: 46%; /* Two blogs per row on larger screens with some spacing */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #9ac4b8; /* Light greenish border */
+    border-radius: 5px;
+}
+
+.blog img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.blog h1 h2 {
+    color: black;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--darkgreen); /* Footer background color */
+    color: #fff; /* Footer text color */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .blog {
+        flex-basis: 100%; /* One blog per row on smaller screens */
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <header>
+
+       <div class='tab'>
+           <a href='index.html'><button>
+        <i class='fa fa-home'></i> <span></span>Home
+        </button></a>
+        <h1>Braille Translator Blog</h1>
+       </div>
+    </header>
+     <main>
+          <div class="blog-container">
+    <div class="blog">
+        <!-- Blog content for the first post -->
+        <h1><sup>9</sup> / <sub>8</sub><sub class='year'>, 2023</sub></h1>
+         <h2>My Inspiration for the Braille Translator</h2>
+        <video width="320" height="240" controls>
+            <source src="meeting_01.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="blog">
+        <!-- Blog content for the first post -->
+        <h1><sup>9</sup> / <sub>11</sub><sub class='year'>, 2023</sub></h1>
+           <h2>Braille Dataset</h2>
+           <p>To make a machine learning system that can recognize Braille characters
+           and translate them into English, we first collected a dataset of Braille characters
+           divided as our training and validation datasets. The data contains 1560 pieces
+           of Braille images. The dataset is classified into 26 subsets with each represents
+           a English letter. All Braille images in the same subset represents the same English
+           letter. The data source can be found in kaggle: https://www.kaggle.com/datasets
+           /shanks0465/braille-character-dataset.</p>
+
+            <img class="OriginalImage" src="BrailleBlog/dataset.png" alt="The Mysterious House 1">
+    </div>
+
+    <div class="blog">
+        <!-- Blog content for the first post -->
+        <h1><sup>9</sup> / <sub>17</sub><sub class='year'>, 2023</sub></h1>
+         <h2>First Step: Train a Machine Learning Model</h2>
+          <p>In the video, I walked through the steps of creating a Braille recognizer model.
+          After using two deep learning models, resizing the training set of Braille images, and
+          training it for a dozen of times, the accuracy of the predictions reached 98%! </p>
+        <video width="320" height="240" controls>
+            <source src="meeting_02.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+      </main>
+
+    <footer>
+        <p>&copy; 2023 Braille Book Nonprofit Organization for the Blind. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
